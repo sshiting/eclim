@@ -624,7 +624,7 @@ function! eclim#project#util#ProjectSettings(project) " {{{
     return
   endif
 
-  let content = ['# Settings for project: eclim', '']
+  let content = ['# Settings for project: ' . project, '']
   let path = ''
   for setting in settings
     if setting.path != path

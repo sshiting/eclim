@@ -1,4 +1,4 @@
-.. Copyright (C) 2005 - 2009  Eric Van Dewoestine
+.. Copyright (C) 2005 - 2013  Eric Van Dewoestine
 
    This program is free software: you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
@@ -41,10 +41,6 @@ Configuration
 -------------
 
 :doc:`Vim Settings </vim/settings>`
-
-.. _g\:EclimPythonInterpreter:
-
-- **g:EclimPythonInterpreter** = 'python'
 
 .. _g\:EclimDjangoAdmin:
 

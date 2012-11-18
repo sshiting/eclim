@@ -57,9 +57,7 @@ import org.eclipse.core.runtime.NullProgressMonitor;
 public class ProjectNatureAddCommand
   extends AbstractCommand
 {
-  /**
-   * {@inheritDoc}
-   */
+  @Override
   public Object execute(CommandLine commandLine)
     throws Exception
   {

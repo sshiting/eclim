@@ -1,0 +1,19 @@
+feature_pydev = 'org.python.pydev.feature'
+
+target(name: 'org.eclim.pydev.test'){
+  depends('test.init')
+  runTests('org.eclim.pydev'){
+    createProject('org.eclim.pydev', 'FIXME')
+  }
+}
+
+target(name: 'org.eclim.pydev.classpath'){
+  fileset(dir: '${eclipse}'){
+    include(name: 'dropins/**/plugins/com.aptana.shared_core*/*.jar')
+    include(name: 'dropins/**/plugins/com.python.pydev*/*.jar')
+    include(name: 'dropins/**/plugins/org.python.pydev*/*.jar')
+    include(name: 'plugins/com.aptana.shared_core*/*.jar')
+    include(name: 'plugins/com.python.pydev*/*.jar')
+    include(name: 'plugins/org.python.pydev*/*.jar')
+  }
+}
